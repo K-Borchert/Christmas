@@ -14,5 +14,5 @@ TRUE(),
 [Kekse-DoD %] > 0, "red",
 [Kekse-DoD %] < 0, "green",
 "black")
-´´´
+
 
