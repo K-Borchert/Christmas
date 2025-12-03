@@ -1,4 +1,5 @@
-´´´
+# Christmas Reporting
+```
 Measures:
 1) Total Cookies = SUM(FactBakery[Quantity])
 2) Prev Day Cookies = CALCULATE([Total Cookies],DATEADD('Date'[Date],-1,DAY))
