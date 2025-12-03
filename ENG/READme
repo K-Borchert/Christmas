@@ -1,0 +1,12 @@
+```
+Measures:
+1) Total Cookies = SUM(FactBakery[Quantity])
+2) Prev Day Cookies = CALCULATE([Total Cookies],DATEADD('Date'[Date],-1,DAY))
+3) DoD % = DIVIDE([Total Cookies]-[Prev Day Cookies],[Prev Day Cookies],0)
+4) DoD ∆ = [Total Cookies]-[Prev Day Cookies]
+5) DoD % Color = 
+SWITCH(
+    TRUE(),
+    [DoD %]>0, "green",
+    [DoD %]<0, "red",
+    "black")
